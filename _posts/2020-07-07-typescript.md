@@ -25,9 +25,9 @@ Runtime 환경, Editor, Complier
 - nvm install 6.10.2
 - nvm use 6.10.3
 - node -v
-- npm init -y			  //npm 기본 설정
-- npm i typescript -g	  //typescript complier 모듈 Global Install
-
+- npm init -y			    //npm 기본 설정
+- npm i typescript -g	    //typescript complier 모듈 Global Install
+- npm i typescript@2.2.0 -g 
 - tsc (xxx.ts 파일 경로)
 - tsc (ts.config 파일이 있을 경우, tsc만 쳐도, ts파일들을 컴파일 해준다.)
 - tsc -w (Watch mode 자동으로 변화를 Compile해주는 것, Gulp 모듈과 비슷하다)
@@ -37,6 +37,9 @@ Runtime 환경, Editor, Complier
 - 타입스크립트 형식 확장자의 경우 .ts 
 - ts.config 파일 내부에, 어떻게 js파일을 생성시킬 것인지 정의
 
+## IDE 활용
+- visual studio code 상에서 typescript complier 지원
+- Use VSCode Version / Use Workspace Version 사용가능
 
 
 
