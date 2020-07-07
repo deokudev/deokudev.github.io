@@ -2,6 +2,7 @@
 published: true
 layout: post
 date: '2020-07-07 13:57 +0900'
+postname: 타입스크립트 이해 1일차
 ---
 ## TypeScript Overview
 TypeScript의 정의
