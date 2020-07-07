@@ -40,6 +40,33 @@ Runtime 환경, Editor, Complier
 ## IDE 활용
 - visual studio code 상에서 typescript complier 지원
 - Use VSCode Version / Use Workspace Version 사용가능
+- npm install tslint : Coding Convention
+- npm i typescript
+- Visual Studio Extenstion : ext install tslint
 
-
+## Compiler Options
+- tsconfig.js 파일 내 내용 수정
+- 필요없는 옵션 : NoLib, importHelpers(ts파일을 js파일로 변경할 경우, Helper 함수가 위아래로 붙음, compile할 때 빼주는 역할)
+```
+{
+  "compileOnSave": true, //파일을 저장할 경우, 자동 compile?
+  // "files": [],           //[]이 아닐 경우, 모든 .ts, .tsx, .tsd, .ts 파일 컴파일됨, 상대,절대경로 리스트 배열
+  // "include": [],         //확장자 *.ts
+  // "exclude": [],         //특정폴더 제외
+  "compilerOptions": {
+    // "types": [],                              //기본적으로, ./node_modules/@types 안의 타입
+    //target : 어떤 JS로 변환시킬 것인가?
+    "target": "es5",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
+    // "lib" : [], lib를 지정하지 않으면 target이 es5일경우, dom, es5, scriptehost를 helper로 지원(.찍으면 definition이 연동됨)
+    // target이 es6이면, es6가 default, es6가 아니면 commonjs가 default
+    // 컴파일 된 모듈의 결과물을 어떤 모듈 시스템으로 할지를 결정
+    "module": "commonjs",                     
+    /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+    // "outDir": "./",                        /* Redirect output structure to the directory. */
+  
+    /* Strict Type-Checking Options */
+    "strict": true,                           /* Enable all strict type-checking options. */
+    }
+}
+```
 
